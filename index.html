@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages - Website Deployment Guide</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #24292f;
+            line-height: 1.7;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: #24292f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .header h1 {
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #d1d5db;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .step {
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            margin-bottom: 22px;
+            padding: 20px;
+            border-left: 5px solid #238636;
+        }
+
+        .step h2 {
+            font-size: 19px;
+            color: #1f883d;
+            margin-bottom: 12px;
+        }
+
+        ol {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        code {
+            background: #f0f2f5;
+            padding: 3px 7px;
+            border-radius: 4px;
+            color: #cf222e;
+            font-family: Consolas, monospace;
+        }
+
+        .note {
+            background: #fff8c5;
+            border: 1px solid #eac54f;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .result {
+            background: #dafbe1;
+            border: 1px solid #82d995;
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .result h2 {
+            color: #116329;
+            margin-bottom: 8px;
+        }
+
+        .url {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px;
+            background: #f6f8fa;
+            color: #57606a;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .step {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>🚀 GitHub Pages Deployment Guide</h1>
+            <p>Step-by-step instructions to publish a website</p>
+        </header>
+
+        <main class="content">
+
+            <section class="step">
+                <h2>Step 1: Create a New Repository</h2>
+                <ol>
+                    <li>Log in to your GitHub account.</li>
+                    <li>Go to <strong>Repositories → New Repository</strong>.</li>
+                    <li>Enter your <strong>Repository Name</strong>.</li>
+                    <li>Select <strong>Visibility: Public</strong>.</li>
+                    <li>Click <strong>Create Repository</strong>.</li>
+                </ol>
+            </section>
+
+            <section class="step">
+                <h2>Step 2: Upload Website Files</h2>
+                <ol>
+                    <li>Open your newly created repository.</li>
+                    <li>Click <strong>Add file → Upload files</strong>.</li>
+                    <li>Upload your <code>index.html</code> file.</li>
+                    <li>Click <strong>Commit changes</strong>.</li>
+                </ol>
+            </section>
+
+            <section class="step">
+                <h2>Step 3: Configure GitHub Pages</h2>
+                <ol>
+                    <li>Go to <strong>Settings → Pages</strong>.</li>
+                    <li>Find the <strong>Build and deployment</strong> section.</li>
+                    <li>Set the Source to <strong>GitHub Actions</strong>.</li>
+                    <li>Select the <strong>Static HTML</strong> workflow.</li>
+                    <li>Review the workflow configuration.</li>
+                    <li>Click <strong>Commit changes</strong> if prompted.</li>
+                </ol>
+            </section>
+
+            <section class="step">
+                <h2>Step 4: Check Deployment Status</h2>
+                <ol>
+                    <li>Open the repository's <strong>Actions</strong> tab.</li>
+                    <li>Select the Static HTML deployment workflow.</li>
+                    <li>Check the workflow execution status.</li>
+                    <li>A green check mark (✅) indicates that the workflow completed successfully.</li>
+                </ol>
+            </section>
+
+            <section class="step">
+                <h2>Step 5: Open Your Live Website</h2>
+                <ol>
+                    <li>Go to <strong>Settings → Pages</strong>.</li>
+                    <li>Wait for the deployment to finish.</li>
+                    <li>Click <strong>Visit site</strong> to open your website.</li>
+                    <li>Test your website in the browser.</li>
+                </ol>
+            </section>
+
+            <div class="note">
+                <strong>💡 Important Notes:</strong>
+                <ul>
+                    <li>Keep <code>index.html</code> in the repository's root directory.</li>
+                    <li>Deployment may take a few minutes.</li>
+                    <li>Make sure the workflow completes without errors.</li>
+                    <li>For a simple static website, HTML, CSS and JavaScript files can be used.</li>
+                </ul>
+            </div>
+
+            <div class="result">
+                <h2>🎉 Website Successfully Published!</h2>
+                <p>Your website URL will generally follow this format:</p>
+                <div class="url">
+                    https://YOUR-USERNAME.github.io/REPOSITORY-NAME/
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            GitHub Pages | Website Deployment Documentation
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
